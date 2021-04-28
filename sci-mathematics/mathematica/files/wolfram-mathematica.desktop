@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Mathematica 12
+Comment=Technical Computing System
+TryExec=/opt/Wolfram/Mathematica/12.2/Executables/Mathematica
+Exec=/opt/Wolfram/Mathematica/12.2/Executables/Mathematica %F
+Icon=wolfram-mathematica
+MimeType=application/mathematica;application/x-mathematica;application/vnd.wolfram.nb;application/vnd.wolfram.cdf;application/vnd.wolfram.player;application/vnd.wolfram.mathematica.package;application/vnd.wolfram.wl;x-scheme-handler/wolfram+cloudobject;x-scheme-handler/wolframmathematica+cloudobject;

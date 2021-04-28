@@ -1,0 +1,16 @@
+diff --git a/extra/linux/Alacritty.desktop b/extra/linux/alacritty.desktop
+similarity index 95%
+rename from extra/linux/Alacritty.desktop
+rename to extra/linux/alacritty.desktop
+index 5cfd391..1460516 100644
+--- a/extra/linux/Alacritty.desktop
++++ b/extra/linux/alacritty.desktop
+@@ -2,7 +2,7 @@
+ Type=Application
+ TryExec=alacritty
+ Exec=alacritty
+-Icon=Alacritty
++Icon=alacritty
+ Terminal=false
+ Categories=System;TerminalEmulator;
+ 

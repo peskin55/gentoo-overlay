@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=sys-apps/util-linux
+DESCRIPTION=Arch Linux mirror list for pacman
+EAPI=7
+HOMEPAGE=https://archlinux.org/mirrorlist
+KEYWORDS=~amd64 ~x86
+RDEPEND=sys-apps/util-linux
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://www.archlinux.org/mirrorlist/?country=US&protocol=http&ip_version=4 -> pacman-mirrorlist-20210112.txt
+_md5_=9dd2637d2812e8b9ddda18796a45f00e

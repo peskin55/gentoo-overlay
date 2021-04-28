@@ -1,0 +1,8 @@
+DEFINED_PHASES=compile configure install
+DESCRIPTION=Arch Linux PGP keyring
+EAPI=7
+HOMEPAGE=git://git.archlinux.org/archlinux-keyring.git
+KEYWORDS=~amd64 ~x86
+SLOT=0
+SRC_URI=https://sources.archlinux.org/other/archlinux-keyring/archlinux-keyring-20201028.tar.gz
+_md5_=28c1d9de8d253b4fc418e61bb7d9604e

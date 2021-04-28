@@ -1,0 +1,23 @@
+diff --git a/src/cpp/server/CMakeLists.txt b/src/cpp/server/CMakeLists.txt
+index 1585177..bcc9418 100644
+--- a/src/cpp/server/CMakeLists.txt
++++ b/src/cpp/server/CMakeLists.txt
+@@ -251,17 +251,12 @@ if (UNIX AND NOT APPLE)
+            DESTINATION ${RSERVER_UPSTART_DIR})
+ 
+     # install configured systemd profile
+-   set(RSERVER_SYSTEMD_DIR "extras/systemd")
++   set(RSERVER_SYSTEMD_DIR "lib/systemd/system")
+    set(RSERVER_SYSTEMD_PROFILE "${RSERVER_SYSTEMD_DIR}/rstudio-server.service")
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/${RSERVER_SYSTEMD_PROFILE}.in
+                   ${CMAKE_CURRENT_BINARY_DIR}/${RSERVER_SYSTEMD_PROFILE})
+    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${RSERVER_SYSTEMD_PROFILE}
+            DESTINATION ${RSERVER_SYSTEMD_DIR})
+-   set(RSERVER_SYSTEMD_PROFILE_REDHAT "${RSERVER_SYSTEMD_DIR}/rstudio-server.redhat.service")
+-   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/${RSERVER_SYSTEMD_PROFILE_REDHAT}.in
+-                  ${CMAKE_CURRENT_BINARY_DIR}/${RSERVER_SYSTEMD_PROFILE_REDHAT})
+-   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${RSERVER_SYSTEMD_PROFILE_REDHAT}
+-           DESTINATION ${RSERVER_SYSTEMD_DIR})
+ 
+ elseif(APPLE)
+ 

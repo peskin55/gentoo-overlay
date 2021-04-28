@@ -1,0 +1,78 @@
+diff --git a/Makefile.in b/Makefile.in
+index 8236bbd..5ca04ae 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -39,7 +39,7 @@ DEFS = @DEFS@ -DNMAP_PLATFORM=\"$(NMAP_PLATFORM)\" -DNMAPDATADIR=\"$(nmapdatadir
+ # http://gcc.gnu.org/ml/gcc-patches/2004-09/msg02055.html
+ # Level 1 only makes changes that don't affect "conforming" programs,
+ # while level 2 enforces additional restrictions.
+-DEFS += -D_FORTIFY_SOURCE=2
++DEFS += 
+ # For mtrace debugging -- see MTRACE define in main.cc for instructions
+ # Should only be enabled during debugging and not in any real release.
+ # DEFS += -DMTRACE=1
+diff --git a/libnetutil/Makefile.in b/libnetutil/Makefile.in
+index c7deb92..392896e 100644
+--- a/libnetutil/Makefile.in
++++ b/libnetutil/Makefile.in
+@@ -5,7 +5,7 @@ CXX = @CXX@
+ CXXFLAGS = @CXXFLAGS@
+ CPPFLAGS = @CPPFLAGS@ $(DEFS)
+ DEFS = @DEFS@
+-DEFS += -D_FORTIFY_SOURCE=2
++DEFS += 
+ AR = ar
+ RANLIB = @RANLIB@
+ 
+diff --git a/nbase/Makefile.in b/nbase/Makefile.in
+index db1380f..a801bfd 100644
+--- a/nbase/Makefile.in
++++ b/nbase/Makefile.in
+@@ -12,7 +12,7 @@ RANLIB = @RANLIB@
+ CCOPT = 
+ DEFS = @DEFS@
+ # With GCC, add extra security checks to source code.
+-DEFS += -D_FORTIFY_SOURCE=2
++DEFS += 
+ CPPFLAGS = @CPPFLAGS@
+ CFLAGS = @CFLAGS@ $(CCOPT) $(GLIB_CFLAGS) $(DEFS) $(INCLS)
+ STATIC = 
+diff --git a/ncat/Makefile.in b/ncat/Makefile.in
+index 4632a78..f399558 100644
+--- a/ncat/Makefile.in
++++ b/ncat/Makefile.in
+@@ -53,7 +53,7 @@ LDFLAGS = @LDFLAGS@
+ LIBS = @LIBS@
+ DEFS = @DEFS@ -DNCAT_DATADIR="\"$(pkgdatadir)\""
+ # With GCC, add extra security checks to source code.
+-DEFS += -D_FORTIFY_SOURCE=2
++DEFS += 
+ INCLS = -I. -I.. -I../nsock/include/ -I$(NBASEDIR)
+ RM = rm -f
+ STRIP = @STRIP@
+diff --git a/nping/Makefile.in b/nping/Makefile.in
+index 3cf9c55..4e5aab2 100644
+--- a/nping/Makefile.in
++++ b/nping/Makefile.in
+@@ -38,7 +38,7 @@ DEFS = @DEFS@ -DNPING_NAME=\"$(NPING_NAME)\" -DNPING_URL=\"$(NPING_URL)\" -DNPIN
+ # http://gcc.gnu.org/ml/gcc-patches/2004-09/msg02055.html
+ # Level 1 only makes changes that don't affect "conforming" programs,
+ # while level 2 enforces additional restrictions.
+-DEFS += -D_FORTIFY_SOURCE=2
++DEFS += 
+ # For mtrace debugging -- see MTRACE define in main.cc for instructions
+ # Should only be enabled during debugging and not in any real release.
+ # DEFS += -DMTRACE=1
+diff --git a/nsock/src/Makefile.in b/nsock/src/Makefile.in
+index 569d999..63fec96 100644
+--- a/nsock/src/Makefile.in
++++ b/nsock/src/Makefile.in
+@@ -13,7 +13,7 @@ RANLIB = @RANLIB@
+ CCOPT =
+ DEFS = @DEFS@ -DNSOCK_VERSION=\"$(NSOCK_VERSION)\"
+ # With GCC, add extra security checks to source code.
+-DEFS += -D_FORTIFY_SOURCE=2
++DEFS += 
+ INCLS = -I../include
+ CFLAGS = @CFLAGS@ $(CCOPT)
+ # CFLAGS = -g -Wall $(DEFS) $(INCLS)

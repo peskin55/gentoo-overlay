@@ -1,0 +1,13 @@
+diff --git a/meson.build b/meson.build
+index f3a16a0..aabbab9 100644
+--- a/meson.build
++++ b/meson.build
+@@ -88,7 +88,7 @@ endif
+ home     = gse_run_command_obj.stdout().strip()
+ 
+ gse_uuid		 = meson.project_name() + '@extensions.gnome-shell.fifi.org'
+-gse_target_dir		 = home + '/.local/share/gnome-shell/extensions/' + gse_uuid
++gse_target_dir		 = '/usr/share/gnome-shell/extensions/' + gse_uuid
+ gse_target_dir_schemas   = join_paths(gse_target_dir, 'schemas')
+ gse_target_locale_dir    = join_paths(gse_target_dir, 'locale')
+ gse_target_dir_dbus_intf = join_paths(gse_target_dir, 'dbus-interfaces')

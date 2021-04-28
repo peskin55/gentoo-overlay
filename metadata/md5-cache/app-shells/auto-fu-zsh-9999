@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install prepare unpack
+DEPEND=compile? ( app-shells/zsh )
+DESCRIPTION=zsh automatic complete-word and list-choices: incremental completion
+EAPI=7
+HOMEPAGE=https://github.com/hchbaw/auto-fu.zsh/
+IUSE=+compile
+KEYWORDS=~amd64
+LICENSE=HPND
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=c4d89ccf61888043b6c6085544a8b7e5

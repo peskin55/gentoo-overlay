@@ -1,0 +1,14 @@
+diff --git a/podcasts-gtk/Cargo.toml b/podcasts-gtk/Cargo.toml
+index dd07d17..28245a2 100644
+--- a/podcasts-gtk/Cargo.toml
++++ b/podcasts-gtk/Cargo.toml
+@@ -27,8 +27,7 @@ html2text = "0.1.12"
+ glib = "0.10"
+ 
+ [dependencies.gettext-rs]
+-git = "https://github.com/danigm/gettext-rs"
+-branch = "no-gettext"
++version = "0.4.2"
+ features = ["gettext-system"]
+ 
+ [dependencies.gio]

@@ -1,0 +1,10 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile unpack
+DESCRIPTION=Shows a notification when extension updates are available.
+EAPI=7
+HOMEPAGE=https://github.com/franglais125/update-extensions
+KEYWORDS=~amd64 ~x86
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=41da799fcb880fc1a68d02974a11b0ca

@@ -1,0 +1,12 @@
+diff --git a/meson.build b/meson.build
+index bfe48e4..2c65cbf 100644
+--- a/meson.build
++++ b/meson.build
+@@ -41,7 +41,6 @@ endif
+ 
+ podcast_toml = files(
+   'Cargo.toml',
+-  'Cargo.lock',
+   'podcasts-data/Cargo.toml',
+   'podcasts-gtk/Cargo.toml',
+ )

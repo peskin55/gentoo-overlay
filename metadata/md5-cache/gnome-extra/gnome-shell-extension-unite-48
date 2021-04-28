@@ -1,0 +1,8 @@
+DEFINED_PHASES=install
+DESCRIPTION=Unite is a GNOME Shell extension which makes a few layout tweaks
+EAPI=7
+HOMEPAGE=https://github.com/hardpixel/unite-shell
+KEYWORDS=~amd64 ~x86
+SLOT=0
+SRC_URI=https://github.com/hardpixel/unite-shell/releases/download/v48/unite-shell-v48.zip -> gnome-shell-extension-unite-48.zip
+_md5_=a5e04247b8f10fc33dde1fdc515c195b

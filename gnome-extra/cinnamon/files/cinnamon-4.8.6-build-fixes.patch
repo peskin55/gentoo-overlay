@@ -1,0 +1,19 @@
+diff --git a/meson.build b/meson.build
+index a4d49a16..eff937ac 100644
+--- a/meson.build
++++ b/meson.build
+@@ -53,6 +51,14 @@ if has_nm
+     dependency('libnm')
+ endif
+ 
++if get_option('build_recorder')
++	gstreamer = dependency('gstreamer-1.0')
++	gstreamer_base = dependency('gstreamer-base-1.0')
++else
++	gstreamer = dependency('', required: false)
++	gstreamer_base = dependency('', required: false)
++endif
++
+ # on some systems we need to find the math lib to make sure it builds
+ cc = meson.get_compiler('c')
+ math = cc.find_library('m', required: false)

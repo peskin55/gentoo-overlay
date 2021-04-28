@@ -1,0 +1,12 @@
+BDEPEND=net-misc/curl dev-libs/libzip dev-libs/openssl sys-libs/zlib sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEFINED_PHASES=prepare
+DEPEND=app-pda/libimobiledevice app-pda/libirecovery app-pda/libplist
+DESCRIPTION=Restore/upgrade firmware of iOS devices
+EAPI=7
+HOMEPAGE=https://libimobiledevice.org
+KEYWORDS=~amd64 ~x86
+RDEPEND=app-pda/libimobiledevice app-pda/libirecovery app-pda/libplist
+SLOT=0
+SRC_URI=https://github.com/libimobiledevice/idevicerestore/releases/download/1.0.0/idevicerestore-1.0.0.tar.bz2
+_eclasses_=autotools	9e63f92c2a5d867fea55ecb160c7d354	gnuconfig	9f91b4b0c84e734a87492d4293f03de5	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_md5_=558378f9343afc6ebbb2acf89f2d271c

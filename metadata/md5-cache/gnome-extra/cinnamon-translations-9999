@@ -1,0 +1,13 @@
+BDEPEND=sys-devel/gettext >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install unpack
+DEPEND=>gnome-extra/cinnamon-settings-daemon-3.6
+DESCRIPTION=Translation data for Cinnamon
+EAPI=7
+HOMEPAGE=https://projects.linuxmint.com/cinnamon/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=>gnome-extra/cinnamon-settings-daemon-3.6
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	l10n	8cdd85e169b835d518bc2fd59f780d8e
+_md5_=5138a2088aba50032e60717bf69fc21b

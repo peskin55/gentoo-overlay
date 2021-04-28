@@ -1,0 +1,12 @@
+BDEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst postrm setup unpack
+DESCRIPTION=Fonts requested by WPS Office
+EAPI=7
+HOMEPAGE=https://github.com/IamDH4/ttf-wps-fonts
+IUSE=X
+KEYWORDS=~amd64 ~x86
+PROPERTIES=live
+RESTRICT=mirror
+SLOT=0
+_eclasses_=font	0667878c2b594871023dd1833d05996f	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=d4dfb240b3fdcd4b35b9429a9da0408f

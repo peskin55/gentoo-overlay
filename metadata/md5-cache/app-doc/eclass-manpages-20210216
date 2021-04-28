@@ -1,0 +1,10 @@
+BDEPEND=sys-apps/gawk
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Collection of Gentoo eclass manpages
+EAPI=7
+HOMEPAGE=https://github.com/mgorny/eclass-to-manpage
+KEYWORDS=~amd64
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=https://github.com/mgorny/eclass-to-manpage/archive/61979ff548f39d0ad6c21b448ebc06b3b6f75b21.tar.gz -> eclass-manpages-20210216.tar.gz https://gitweb.gentoo.org/repo/gentoo.git/snapshot/gentoo-a44a7165b46889e31466b1eb876974dbbeb36899.tar.bz2 -> eclass-manpages-20210216-repo.tar.bz2
+_md5_=afdb337cca68a26be56acc1a36c384a6

@@ -1,0 +1,13 @@
+diff --git a/Target.h b/Target.h
+index ae3a46e..bce26ab 100644
+--- a/Target.h
++++ b/Target.h
+@@ -72,6 +72,8 @@
+ 
+ #ifndef NOLUA
+ #include "nse_main.h"
++#else
++#include <string>
+ #endif
+ 
+ #include "portreasons.h"

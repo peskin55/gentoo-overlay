@@ -1,0 +1,10 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Gitlab extension utilizes the official Gitlab API to provide a comfortable overview about your projects, commits & pipelines.
+EAPI=7
+HOMEPAGE=https://github.com/cinatic/gitlab-extension
+KEYWORDS=~amd64 ~x86
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=72fa036c114052ee9e746e18d1d1282d

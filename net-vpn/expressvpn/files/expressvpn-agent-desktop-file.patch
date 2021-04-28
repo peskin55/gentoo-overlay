@@ -1,0 +1,11 @@
+diff --git a/usr/lib/expressvpn/expressvpn-agent.desktop b/usr/lib/expressvpn/expressvpn-agent.desktop
+index 2d1a8c9..e20a0c4 100755
+--- a/usr/lib/expressvpn/expressvpn-agent.desktop
++++ b/usr/lib/expressvpn/expressvpn-agent.desktop
+@@ -3,5 +3,5 @@ Type=Application
+ Encoding=UTF-8
+ Name=ExpressVPN Agent
+ Exec=/usr/bin/expressvpn-agent --daemon
+-Icon=/usr/lib/expressvpn/icon.png
+ Terminal=false
++Icon=expressvpn-agent

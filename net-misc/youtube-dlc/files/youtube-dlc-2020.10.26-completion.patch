@@ -1,0 +1,15 @@
+diff --git a/setup.py b/setup.py
+index a10ef0a..1d0ff10 100644
+--- a/setup.py
++++ b/setup.py
+@@ -18,8 +18,8 @@ if len(sys.argv) >= 2 and sys.argv[1] == 'py2exe':
+     print("inv")
+ else:
+     files_spec = [
+-        ('etc/bash_completion.d', ['youtube-dlc.bash-completion']),
+-        ('etc/fish/completions', ['youtube-dlc.fish']),
++        ('share/bash-completion/completions', ['youtube-dlc.bash-completion']),
++        ('share/fish/vendor_completions.d', ['youtube-dlc.fish']),
+         ('share/doc/youtube_dlc', ['README.txt']),
+         ('share/man/man1', ['youtube-dlc.1'])
+     ]

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile
+DEPEND=gnome-base/gnome-shell gnome-base/gnome-menus
+DESCRIPTION=Arc Menu is a Gnome shell extension designed to replace the standard menu
+EAPI=7
+HOMEPAGE=https://gitlab.com/arcmenu/ArcMenu
+KEYWORDS=~amd64 ~x86
+RDEPEND=gnome-base/gnome-shell gnome-base/gnome-menus
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://gitlab.com/arcmenu/ArcMenu/-/archive/v7/ArcMenu-v7.tar.bz2 -> gnome-shell-extension-ArcMenu-7.tar.bz2
+_md5_=da42f7a59e38d4f07a2821b4315d97da

@@ -1,0 +1,8 @@
+DEFINED_PHASES=prepare
+DESCRIPTION=Modular initramfs image creation utility
+EAPI=7
+HOMEPAGE=https://projects.archlinux.org/mkinitcpio.git
+KEYWORDS=~amd64 ~x86
+SLOT=0
+SRC_URI=https://sources.archlinux.org/other/mkinitcpio/mkinitcpio-30.tar.gz
+_md5_=bbe090cdac80c835e75e29b0346af0e6

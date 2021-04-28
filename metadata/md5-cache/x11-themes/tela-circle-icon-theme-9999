@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst postrm unpack
+DESCRIPTION=A flat colorful Design icon theme
+EAPI=7
+HOMEPAGE=https://github.com/vinceliuice/Tela-circle-icon-theme
+IUSE=+all standard black blue brown green grey orange pink purple red yellow manjaro ubuntu
+KEYWORDS=~amd64 ~x86
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=446b5571f81b6f8869c5f029616a19c8

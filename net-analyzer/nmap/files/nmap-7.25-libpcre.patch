@@ -1,0 +1,12 @@
+diff --git a/configure.ac b/configure.ac
+index ac123af..aba492a 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -535,7 +535,6 @@ fi
+ 
+ # If we still don't have it, we use our own
+ if test $have_pcre != yes ; then
+-  AC_CONFIG_SUBDIRS( libpcre )
+   CPPFLAGS="-I\$(top_srcdir)/$LIBPCREDIR $CPPFLAGS"
+   LIBPCRE_LIBS="$LIBPCREDIR/libpcre.a"
+   PCRE_BUILD="build-pcre"

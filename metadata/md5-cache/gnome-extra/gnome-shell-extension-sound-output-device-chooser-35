@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile configure install
+DESCRIPTION=A simple selector to enabled selection of sound source and sink based on Gnome Control Center
+EAPI=7
+HOMEPAGE=https://github.com/kgshank/gse-sound-output-device-chooser
+KEYWORDS=~amd64 ~x86
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=https://github.com/kgshank/gse-sound-output-device-chooser/archive/refs/tags/35.tar.gz -> gnome-shell-extension-sound-output-device-chooser-35.tar.gz
+_md5_=7efa9cef6c21c458ae7e9acb10ea55a4

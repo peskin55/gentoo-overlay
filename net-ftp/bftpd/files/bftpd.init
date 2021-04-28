@@ -1,0 +1,3 @@
+#!/sbin/openrc-run
+command=/usr/sbin/bftpd
+command_args="-d"

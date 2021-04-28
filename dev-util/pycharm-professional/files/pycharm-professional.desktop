@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PyCharm Professional Edition
+Comment=Python IDE for Professional Developers
+Exec=/usr/bin/pycharm-professional %f
+Icon=pycharm-professional
+Terminal=false
+StartupWMClass=pycharm-professional
+Categories=Development;IDE;X-Python;
+StartupNotify=true

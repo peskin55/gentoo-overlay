@@ -1,0 +1,27 @@
+diff --git a/podcasts-gtk/src/meson.build b/podcasts-gtk/src/meson.build
+index 52b0f16..5389655 100644
+--- a/podcasts-gtk/src/meson.build
++++ b/podcasts-gtk/src/meson.build
+@@ -42,22 +42,3 @@ podcasts_sources = files(
+   'utils.rs',
+   'window.rs',
+ )
+-
+-cargo_release = custom_target('cargo-build',
+-                        build_by_default: true,
+-                        input: [
+-                                podcast_toml,
+-                                data_sources,
+-                                podcasts_sources,
+-                               ],
+-                        output: ['gnome-podcasts'],
+-                        install: true,
+-                        install_dir: podcasts_bindir,
+-                        console: true,
+-                        depends: podcasts_resources,
+-                        command: [cargo_script,
+-                                  '@SOURCE_ROOT@',
+-                                  '@OUTPUT@',
+-                                  meson.build_root(),
+-                                  profile
+-                                 ])

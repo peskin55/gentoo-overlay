@@ -1,0 +1,13 @@
+diff --git a/doc/CMakeLists.txt b/doc/CMakeLists.txt
+index 2896c42..09547cb 100644
+--- a/doc/CMakeLists.txt
++++ b/doc/CMakeLists.txt
+@@ -4,7 +4,7 @@
+ if (${PYTHON_VERSION_MAJOR} STREQUAL "2")
+     SET(SPHINX_BUILD_NAME "sphinx-build")
+ else()
+-    SET(SPHINX_BUILD_NAME "sphinx-build-3")
++    SET(SPHINX_BUILD_NAME "sphinx-build")
+ endif()
+ 
+ 

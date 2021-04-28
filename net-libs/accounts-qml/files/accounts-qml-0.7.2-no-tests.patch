@@ -1,0 +1,16 @@
+diff --git a/accounts-qml-module.pro b/accounts-qml-module.pro
+index 1e1d62c..fe75224 100644
+--- a/accounts-qml-module.pro
++++ b/accounts-qml-module.pro
+@@ -5,8 +5,9 @@ include(common-project-config.pri)
+ TEMPLATE = subdirs
+ CONFIG += ordered
+ SUBDIRS = \
+-    src \
+-    tests
++    src
++
++CONFIG(tests): SUBDIRS += tests
+ 
+ include(common-installs-config.pri)
+ 

@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=A slightly better history for zsh
+EAPI=7
+HOMEPAGE=https://github.com/larkery/zsh-histdb
+KEYWORDS=~amd64
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=app-shells/zsh dev-db/sqlite
+RESTRICT=mirror
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=5ab49e64cba142351ec608da3eea94bf

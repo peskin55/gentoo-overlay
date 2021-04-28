@@ -1,0 +1,10 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Displays Internet Speed
+EAPI=7
+HOMEPAGE=https://github.com/hedayaty/NetSpeed
+KEYWORDS=~amd64 ~x86
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=d91bcfffc002c0200170322515a722e3

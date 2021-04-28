@@ -1,0 +1,49 @@
+diff --git a/Makefile.in b/Makefile.in
+index f566561..3aec27a 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -2,7 +2,7 @@ VERSION=5.6
+ CC?=@CC@
+ INSTALL=@INSTALL@
+ prefix=@prefix@
+-CFLAGS=@CFLAGS@ @DEFS@ -Wall -I. -DVERSION=\"$(VERSION)\" -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPREFIX=\"$(prefix)\" @DEBUG@
++CFLAGS=@CFLAGS@ @CPPFLAGS@ @DEFS@ -Wall -I. -DVERSION=\"$(VERSION)\" -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPREFIX=\"$(prefix)\" @DEBUG@ -fcommon
+ LIBS=@LIBS@
+ mandir=@mandir@
+ sbindir=@sbindir@
+@@ -15,7 +15,7 @@ OBJS=bftpdutmp.o commands.o commands_admin.o cwd.o dirlist.o list.o login.o logg
+ SRCS=bftpdutmp.c commands.c commands_admin.c cwd.c dirlist.c list.c login.c logging.c main.c mystring.c options.c md5.c
+ 
+ OBJS2LINK=$(OBJS) $(PAX)
+-LDFLAGS=
++LDFLAGS?=@LDFLAGS@
+ 
+ all: bftpd
+ 
+@@ -41,14 +41,9 @@ install: all
+ 	$(INSTALL) -g 0 -m 700 -o 0 bftpd $(DESTDIR)/$(prefix)/sbin
+ 	mkdir -p $(DESTDIR)/$(mandir)/man8
+ 	$(INSTALL) -g 0 -m 644 -o 0 bftpd.8 $(DESTDIR)/$(mandir)/man8
+-	mkdir -p $(DESTDIR)/$(prefix)/etc
+-	[ -f $(DESTDIR)/$(prefix)/etc/bftpd.conf ] || \
+-		$(INSTALL) -g 0 -m 600 -o 0 bftpd.conf $(DESTDIR)/$(prefix)/etc
+-	mkdir -p $(DESTDIR)/$(prefix)/var/log
+-	touch $(DESTDIR)/$(prefix)/var/log/bftpd.log
+-	chmod 644 $(DESTDIR)/$(prefix)/var/log/bftpd.log
+-	mkdir -p $(DESTDIR)/$(prefix)/var/run/bftpd
+-	chmod 755 $(DESTDIR)/$(prefix)/var/run/bftpd
++	mkdir -p $(DESTDIR)/etc
++	[ -f $(DESTDIR)/etc/bftpd.conf ] || \
++		$(INSTALL) -g 0 -m 600 -o 0 bftpd.conf $(DESTDIR)/etc
+ 
+ clean distclean:
+ 	rm -f *~ $(OBJS) bftpd mksources.finished config.cache
+@@ -62,7 +57,7 @@ newversion: clean
+ 
+ uninstall:
+ 	rm -f $(DESTDIR)/$(prefix)/sbin/bftpd $(DESTDIR)/$(mandir)/man8/bftpd.8 \
+-		$(DESTDIR)/$(prefix)/etc/bftpd.conf
++		$(DESTDIR)/etc/bftpd.conf
+ 
+ distribute: install
+ 	rm -rf dist

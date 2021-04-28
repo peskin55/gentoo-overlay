@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=Meta ebuild for libnemoextension
+EAPI=7
+HOMEPAGE=https://github.com/limuxmint
+KEYWORDS=~alpha amd64 arm ~arm64 ppc x86
+LICENSE=metapackage
+SLOT=0
+_md5_=0f1e9fba3dfd164340fa18b7ceb96725

@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=net-misc/curl dev-libs/openssl
+DESCRIPTION=C program to download VoD HLS (.m3u8) files
+EAPI=7
+HOMEPAGE=https://github.com/selsta/hlsdl
+KEYWORDS=amd64
+LICENSE=MIT
+PROPERTIES=live
+RESTRICT=mirror
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_md5_=20b415a871963b902542a1bb2572cf42

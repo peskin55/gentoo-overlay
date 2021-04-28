@@ -1,0 +1,13 @@
+diff --git a/Makefile b/Makefile
+index 42e4e9a..9257e84 100644
+--- a/Makefile
++++ b/Makefile
+@@ -67,7 +67,7 @@ build: $(BUILD_DIR) $(COMPILED_SCHEMAS) $(POT_FILE) $(MO_FILES)
+ package: $(BUILD_DIR)
+ 	cd $(BUILD_DIR) && zip -r $(EXTENSION_NAME).zip *
+ 
+-install: build
++install:
+ 	rm -rf $(INSTALL_DIR)
+ 	mkdir -p $(INSTALL_DIR)
+ 	cp -r $(BUILD_DIR)/* $(INSTALL_DIR)

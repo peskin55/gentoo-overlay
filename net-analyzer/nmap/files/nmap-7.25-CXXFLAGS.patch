@@ -1,0 +1,13 @@
+diff --git a/Makefile.in b/Makefile.in
+index 8236bbd..1df843f 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -503,7 +503,7 @@ lua-format:
+ 	./docs/style/lua-format -i scripts/*.nse
+ 
+ makefile.dep:
+-	$(CXX) -MM $(CPPFLAGS) $(SRCS) > $@
++	$(CXX) -MM $(CPPFLAGS) $(CXXFLAGS) $(SRCS) > $@
+ -include makefile.dep
+ 
+ # These the old names of scripts that have been renamed or deleted. Any
