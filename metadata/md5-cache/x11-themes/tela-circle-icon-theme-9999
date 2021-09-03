@@ -7,5 +7,5 @@ IUSE=+all standard black blue brown green grey orange pink purple red yellow man
 KEYWORDS=~amd64 ~x86
 PROPERTIES=live
 SLOT=0
-_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	xdg-utils	27f9a2f19502b925ac117bd657aa2979
 _md5_=446b5571f81b6f8869c5f029616a19c8

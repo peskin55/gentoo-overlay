@@ -6,5 +6,5 @@ KEYWORDS=~amd64 ~x86
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=https://cache.agilebits.com/dist/1P/op/pkg/v1.8.0/op_linux_amd64_v1.8.0.zip -> op-cli-bin-1.8.0.zip
-_eclasses_=multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	unpacker	517f16af48ee3ab88180dd58b5143213
+_eclasses_=multilib	97566c1a256d07b00848aa767e38a352	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	unpacker	928e1f35ef78ba9fc2b214e29c2b55a4
 _md5_=126d7ca86bf9902016a7af5a283a2bf6

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm setup
+DESCRIPTION=A hackable text editor for the 21st Century
+EAPI=8
+HOMEPAGE=https://atom.io/
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=!app-editors/atom || ( dev-lang/python:3.10 dev-lang/python:3.9 dev-lang/python:3.8 ) dev-vcs/git x11-libs/gtk+:3 virtual/libudev dev-libs/libgcrypt x11-libs/libnotify x11-libs/libXtst dev-libs/nss gnome-base/gvfs x11-misc/xdg-utils sys-libs/libcap x11-libs/libX11 x11-libs/libXScrnSaver media-libs/alsa-lib x11-libs/libxkbfile net-misc/curl
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=https://github.com/atom/atom/releases/download/v1.58.0/atom-amd64.tar.gz -> atom-1.58.0.tar.gz
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	multilib	97566c1a256d07b00848aa767e38a352	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	python-any-r1	13f6d423c5c5bc519a9b552654cc745f	python-utils-r1	08d890890f70fe0096093016e55438d5	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_md5_=cca90d07bff080eaca179dd88a43774e

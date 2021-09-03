@@ -1,0 +1,15 @@
+BDEPEND=>=dev-util/meson-0.57.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+DEFINED_PHASES=compile configure install test
+DEPEND=app-arch/libarchive:=[lzma] gpg? ( >=app-crypt/gpgme-1.4.0:= ) curl? ( net-misc/curl ) !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) virtual/libiconv virtual/libintl net-libs/pacman-mirrorlist app-crypt/archlinux-keyring app-text/asciidoc doc? ( app-doc/doxygen ) test? ( sys-apps/fakeroot sys-apps/fakechroot )
+DESCRIPTION=Archlinux's binary package manager
+EAPI=7
+HOMEPAGE=https://archlinux.org/pacman/
+IUSE=+curl debug +doc +gpg libressl test
+KEYWORDS=-* ~amd64
+LICENSE=GPL-2
+RDEPEND=app-arch/libarchive:=[lzma] gpg? ( >=app-crypt/gpgme-1.4.0:= ) curl? ( net-misc/curl ) !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) virtual/libiconv virtual/libintl net-libs/pacman-mirrorlist app-crypt/archlinux-keyring
+RESTRICT=mirror test
+SLOT=0/10
+SRC_URI=https://sources.archlinux.org/other/pacman/pacman-6.0.0.tar.xz
+_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	meson	493198f00f20d2ecf10552d2737f2f13	multilib	97566c1a256d07b00848aa767e38a352	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	python-utils-r1	08d890890f70fe0096093016e55438d5	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa
+_md5_=249597c453ae4a450d8753bf57599758

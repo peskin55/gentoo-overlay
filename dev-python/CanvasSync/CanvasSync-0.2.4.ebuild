@@ -4,12 +4,12 @@
 EAPI=7
 
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Simple file downloader for Canvas of Instructure."
 HOMEPAGE="https://github.com/perslev/CanvasSync"
-SRC_URI="https://files.pythonhosted.org/packages/b4/2d/cc0aea50715fb85671f826bab384292688f94a5338d7ff08d78ea084ac01/${P}.tar.gz"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE=""
 SLOT="0"

@@ -18,8 +18,6 @@ BDEPEND=""
 
 S=${WORKDIR}
 
-PATCHES=( "${FILESDIR}/${P}.patch" )
-
 src_unpack() {
 	cp --dereference "${DISTDIR}/${P}.txt" "${S}"
 }
@@ -28,4 +26,3 @@ src_install() {
 	insinto "/etc/pacman.d"
 	newins "${S}/${P}.txt" "mirrorlist"
 }
-	

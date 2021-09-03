@@ -1,11 +1,11 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl] >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl] >=dev-util/meson-0.57.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install setup test unpack
 DESCRIPTION=libnemo-extension Python bindings
 EAPI=7
 HOMEPAGE=https://github.com/linuxmint
-IUSE=python_single_target_python3_7 python_single_target_python3_8
+IUSE=+python_single_target_python3_8
 KEYWORDS=~amd64 ~x86
 PROPERTIES=live
 SLOT=0
-_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	meson	e43eef9331f54965a573ed380854ff47	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	python-single-r1	d25ac9d5d91fe9d44fda6ec192aca11a	python-utils-r1	3ea803de86891185c7b1db2c0b5bc8c8	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	meson	493198f00f20d2ecf10552d2737f2f13	multilib	97566c1a256d07b00848aa767e38a352	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	python-single-r1	d46c125afba8be02eb1cd7104bac6e9c	python-utils-r1	08d890890f70fe0096093016e55438d5	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa
 _md5_=135995f24671d0b2b180fff6e32c8caa

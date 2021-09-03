@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install postinst postrm preinst prepare unpack
+DEPEND=sys-apps/net-tools systemd? ( sys-apps/systemd ) dev-util/desktop-file-utils x11-misc/shared-mime-info
+DESCRIPTION=Propietary VPN client for Linux
+EAPI=7
+HOMEPAGE=https://expressvpn.com
+IUSE=systemd
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=ExpressVPN
+RDEPEND=sys-apps/net-tools systemd? ( sys-apps/systemd )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=https://download.expressvpn.xyz/clients/linux/expressvpn_3.10.0.9-beta_amd64.deb -> expressvpn-3.10.0.9-r1.deb
+_eclasses_=bash-completion-r1	d3a60385655d9b402be765a6de333245	desktop	c0d27bf73aa08ca05b663dbd31fbef28	multilib	97566c1a256d07b00848aa767e38a352	systemd	c846b9e02ac8293bfc9ca38a195c2a18	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	unpacker	928e1f35ef78ba9fc2b214e29c2b55a4	xdg	6024fbc93167fad782e2032933654857	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_md5_=2defa8ee5676ba1523910366691587ea

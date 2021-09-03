@@ -1,0 +1,10 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=Simple extension to show your LAN IP address on the GNOME panel.
+EAPI=8
+HOMEPAGE=https://github.com/Josholith/gnome-extension-lan-ip-address
+KEYWORDS=~amd64
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=b3887710cfbc45f6a94423f2c9601833

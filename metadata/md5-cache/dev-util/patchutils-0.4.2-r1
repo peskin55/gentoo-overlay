@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=http://cyberelk.net/tim/data/patchutils/stable/patchutils-0.4.2.tar.xz https://github.com/benjsc/splitpatch/archive/fd2f58d04a3bbf21bd0b46d05d1fb7f5ad2b0e37.tar.gz
-_eclasses_=ruby-single	dd06178c43afcd54225a7d0fca6342a8	ruby-utils	03dfa7f54d59d740c2964dc7256d2820
+_eclasses_=ruby-single	214d0508e74b80c85efcef39699cb9a2	ruby-utils	08ae6f9c60b19aabce3f66a30cce9a2d
 _md5_=68088f8ff776f019a83599aaf27d8c03
